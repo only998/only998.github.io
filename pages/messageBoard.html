@@ -1,0 +1,54 @@
+<!--自嗨留言板-->
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>思沃影院</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="icon" href="../images/favicon.ico">
+    <link href="../css/bootstrap.min.css" rel='stylesheet' type='text/css' media="all"/>
+    <link href="../css/style.css" rel='stylesheet' type='text/css' media="all"/>
+</head>
+<body>
+
+<div class="container">
+    <div class="row">
+        <h3>欢迎来到自嗨留言板！</h3>
+        <hr >
+        <div class="col-md-9" style="margin-left: -12px">
+            <h4><strong>最新留言</strong></h4>
+            <hr>
+            <table style="width:590px">
+                <tr>
+                    <th>留言内容</th>
+                    <th>留言人</th>
+                    <th>联系方式</th>
+                    <th>留言时间</th>
+                </tr>
+                <tbody id="show"></tbody>
+            </table>
+            <hr>
+            <h4><strong>添加留言</strong></h4>
+            <textarea class="form-control" rows="5" id="content" placeholder="请输入留言内容" style="width: 580px;"></textarea>
+
+            <form class="form-inline" style="padding-top: 10px">
+                <div class="form-group">
+                    用户名 <input type="text" class="form-control" id="user" placeholder="非必填">
+                </div>
+                <div class="form-group">
+                   联系方式 <input type="text" class="form-control" id="title" placeholder="非必填">
+                </div>
+                <button type="submit" class="btn btn-info" onclick="addMsg();">提交</button>
+                <button type="submit" class="btn btn-danger" onclick="clearMsg();">清除</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="../js/dao/message.js"></script>
+<!--鼠标点击特效-->
+<canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;"></canvas>
+<script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script>
+<script type="text/javascript" src="../js/tools/fireworks.js"></script>
+</body>
+</html>

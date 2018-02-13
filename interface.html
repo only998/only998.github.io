@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>思沃影院</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="icon" href="images/favicon.ico">
+    <link href="css/bootstrap.min.css" rel='stylesheet' type='text/css' media="all"/>
+    <link href="css/style.css" rel='stylesheet' type='text/css' media="all"/>
+</head>
+
+<body>
+
+<div class="container">
+    <h3>API查询：</h3>
+    <hr>
+    <div class="row">
+        <div class="col-md-2">
+            <h4>返回电影分类信息：</h4>
+        </div>
+        <div class="col-md-10" style="margin-left: -25px">
+            <button class="btn btn-default" type="button" onclick="classification()">查询</button>
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-md-12">
+            <h4>返回电影详细信息，支持按名称和 ID 过滤：</h4>
+        </div>
+        <div class="col-md-12">
+            <div class="top-search">
+                <form class="navbar-form navbar-right" style="margin-left: -1.3%">
+                    <input type="text" class="form-control" id="IndexKey" placeholder="请输入您要查找的完整电影名或ID" style="color: #ff6a85;border-color: #7cd4ff">
+                    <input type="submit" id="IndexOpenUrl" value=" ">
+                </form>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <h4>返回多部电影详细信息，支持按类别过滤：</h4>
+    <button class="btn btn-info" type="button" onclick="indexInfo()">首页</button>
+    <button class="btn btn-primary" type="button" onclick="fantasyInfo()">奇幻/科幻片</button>
+    <button class="btn btn-success" type="button" onclick="loveInfo()">爱情片</button>
+    <button class="btn btn-info" type="button" onclick="comedyInfo()">喜剧片</button>
+    <button class="btn btn-warning" type="button" onclick="artInfo()">艺术片</button>
+    <button class="btn btn-danger" type="button" onclick="cartoonInfo()">动画/冒险片</button>
+    <button class="btn btn-success" type="button" onclick="thrillerInfo()">惊悚/悬疑片</button>
+    <p id="info"></p>
+    <div id="html">
+
+    </div>
+</div>
+
+<script type="text/javascript" src="js/tools/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="js/tools/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/database/new.js"></script>
+<script type="text/javascript" src="js/database/art.js"></script>
+<script type="text/javascript" src="js/database/cartoon.js"></script>
+<script type="text/javascript" src="js/database/comedy.js"></script>
+<script type="text/javascript" src="js/database/fantasy.js"></script>
+<script type="text/javascript" src="js/database/love.js"></script>
+<script type="text/javascript" src="js/database/thriller.js"></script>
+<script type="text/javascript" src="js/dao/index.js"></script>
+<script type="text/javascript" src="js/dao/api.js"></script>
+</body>
+</html>

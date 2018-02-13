@@ -1,0 +1,189 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>思沃影院</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="icon" href="images/favicon.ico">
+    <link href="css/bootstrap.min.css" rel='stylesheet' type='text/css' media="all"/>
+    <link href="css/style.css" rel='stylesheet' type='text/css' media="all"/>
+</head>
+<body style="background-color: #fff4ce">
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false" aria-controls="navbar">
+                <span >搜索</span>
+            </button>
+            <a class="navbar-brand" href="index.html"><h1><img src="images/logo.png" alt=""/></h1></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <div class="top-search">
+                <form class="navbar-form navbar-right">
+                    <input type="text" class="form-control" id="SingleKey" placeholder="请输入您要查找的完整电影名或ID"
+                           style="color: #ff6a85;border-color: #7cd4ff">
+                    <input type="submit" id="SingleOpenUrl" value=" ">
+                </form>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</nav>
+<div class="col-sm-3 col-md-2 sidebar">
+    <div class="top-navigation">
+        <div class="clearfix"></div>
+    </div>
+    <div class="drop-navigation drop-navigation">
+        <ul class="nav nav-sidebar">
+
+            <!--分类菜单-->
+            <li class="" id="menuIndex"><a href="index.html?index" class="home-icon" id="index">
+                <span class="glyphicon glyphicon-home" aria-hidden="true">
+                </span><span id="classify1.1"></span></a></li>
+            <li class="" id="menuFantasy"><a href="index.html?fantasy" class="user-icon" id="fantasy">
+                <span class="glyphicon glyphicon-facetime-video" aria-hidden="true">
+                </span><span id="classify1.2"></span></a></li>
+            <li class="" id="menuLove"><a href="index.html?love" class="sub-icon" id="love">
+                <span class="glyphicon glyphicon-heart" aria-hidden="true">
+                </span><span id="classify1.3"></span></a></li>
+            <li class="" id="menuComedy"><a href="index.html?comedy" class="user-icon" id="comedy">
+                <span class="glyphicon glyphicon-asterisk" aria-hidden="true">
+                </span><span id="classify1.4"></span></a></li>
+            <li class="" id="menuArt"><a href="index.html?art" class="sub-icon" id="art">
+                <span class="glyphicon glyphicon-headphones" aria-hidden="true">
+                </span><span id="classify1.5"></span></a></li>
+            <li class="" id="menuCartoon"><a href="index.html?cartoon" class="user-icon" id="cartoon">
+                <span class="glyphicon glyphicon-send" aria-hidden="true">
+                </span><span id="classify1.6"></span></a></li>
+            <li class="" id="menuThriller"><a href="index.html?thriller" class="sub-icon" id="thriller">
+                <span class="glyphicon glyphicon-eye-close" aria-hidden="true">
+                </span><span id="classify1.7"></span></a></li>
+        </ul>
+    </div>
+</div>
+
+
+<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+    <div class="show-top-grids">
+        <div class="col-sm-8 col-md-9 single-left">
+
+            <!--电影详情-->
+            <div class="row">
+                <div class="col-md-3 col-xs-7">
+                    <a href="" id="douban" target="_blank"><img class="detailsImage" src="" id="image" title="去豆瓣" /></a>
+                </div>
+                <div class="col-md-9 col-xs-7 details">
+                    <span>电影编号</span>：<span id="id"></span><br/>
+                    <!--<span>原链接</span>：<span id="alt"></span><br/>-->
+                    <span>年份</span>：<span id="year"></span><br/>
+                    <span>片名</span>：<span id="title"></span><br/>
+                    <span>评分</span>：<span id="rating"></span><br/>
+                    <span>又名</span>：<span id="original_title"></span><br/>
+                    <span>导演</span>：<span id="directors"></span><br/>
+                    <span>主演</span>：<span id="casts"></span><br/>
+                    <span>类别</span>：<span id="genres"></span>
+                </div>
+            </div>
+
+            <!--剧情简介-->
+            <hr style="border-bottom: 2px solid #b2f4f1;">
+            <h4><strong>剧情简介:</strong></h4>
+            <p id="synopsis"></p>
+            <h4 style="padding-top: 2em"><strong>评论:</strong></h4>
+            <!--评论-->
+            <div class="all-comments">
+                <div class="media-grids" >
+                    <div class="media">
+                        <div class="media-body">
+                            <p id="comment1"></p>
+                        </div>
+                    </div>
+                    <div class="media">
+                        <div class="media-body">
+                            <p id="comment2"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--相关电影推荐-->
+        <div class="col-md-2 single-right myRecommend">
+            <h3 >相关推荐</h3>
+            <div class="single-grid-right">
+                <div class="single-right-grids tuijian">
+                    <div class="col-md-4 resent-grid-img">
+                        <a href="" id="likeImageUrl1"><img src="" id="likeImage1" title="查看详情"/></a>
+                    </div>
+                    <div class="col-md-8 single-right-grid-right" style="width:200px;">
+                        <a href="" class="title" id="likeTitle1"></a>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="single-right-grids">
+                    <div class="col-md-4 resent-grid-img">
+                        <a href="" id="likeImageUrl2"><img src="" id="likeImage2" title="查看详情"/></a>
+                    </div>
+                    <div class="col-md-8 single-right-grid-right" style="width:200px;">
+                        <a href="single.html" class="title" id="likeTitle2"></a>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="single-right-grids">
+                    <div class="col-md-4 resent-grid-img">
+                        <a href="" id="likeImageUrl3"><img src="" id="likeImage3" title="查看详情"/></a>
+                    </div>
+                    <div class="col-md-8 single-right-grid-right" style="width:200px;">
+                        <a href="single.html" class="title" id="likeTitle3"></a>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+
+
+    <!-- footer -->
+    <div class="footer">
+        <div class="footer-grids">
+            <div class="footer-top">
+                <div class="footer-top-nav">
+                    <ul>
+                        <li><a href="pages/about.html">关于</a></li>
+                        <li><a href="interface.html" target="_blank">API查询</a></li>
+                        <li><a href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=PVxZUFRTfU5JUk9QRVRTWhNeUlA"
+                               TARGET="_blank">联系我们</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script type="text/javascript" src="js/tools/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="js/tools/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/database/new.js"></script>
+<script type="text/javascript" src="js/database/art.js"></script>
+<script type="text/javascript" src="js/database/cartoon.js"></script>
+<script type="text/javascript" src="js/database/comedy.js"></script>
+<script type="text/javascript" src="js/database/fantasy.js"></script>
+<script type="text/javascript" src="js/database/love.js"></script>
+<script type="text/javascript" src="js/database/thriller.js"></script>
+<script type="text/javascript" src="js/database/classify.js"></script>
+<script type="text/javascript" src="js/dao/index.js"></script>
+<script type="text/javascript" src="js/dao/single.js"></script>
+<!--鼠标点击特效-->
+<canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;"></canvas>
+<script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script>
+<script type="text/javascript" src="js/tools/fireworks.js"></script>
+</body>
+</html>
